@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
+    <title>Black Jack</title>
+</head>
+<body>
+    <div class="main">
+        <img src="images/blackjack.jpg" alt="">    
+    </div>
+    <div class="spieler">
+        <img src="images/player.png" alt="">
+        <img src="images/dealer.png" alt="">
+        
+    </div>
+    <div class="karten">
+        <h2 class="karte_spieler">Karte:</h2>
+        <h2 class="karte_cpu">Karte:</h2>
+    </div>
+    <div class="geld">
+        <h2 id="geld_spieler">Geld gesamt:</h2>
+    </div>
+    <div class="chips">
+        <img src="images/4.png" onclick="klick_weiß()" id="chip_weiß_stop">
+        <p id="anzahl_chip_weiß">10</p>
+        <img src="images/1.png" onclick="klick_rot()" id="chip_rot_stop">
+        <p id="anzahl_chip_rot">8</p>
+        <img src="images/5.png" onclick="klick_grün()" id="chip_grün_stop">
+        <p id="anzahl_chip_grün">6</p>
+        <img src="images/3.png" onclick="klick_schwarz()" id="chip_schwarz_stop">
+        <p id="anzahl_chip_schwarz">3</p>
+
+    </div>
+    <div class="geld_einsatz">
+        <h2 id="geld_einsatz_spieler">Geld eingesetzt:</h2>
+    </div>
+    <div class="button-spiel">
+        <button class="btn" click="start" onclick="klicke_hit" id="">Hit</button>
+        <button class="btn" click="start" onclick= id="">Halten</button>
+    </div>
+
+    <div class="punkte">
+        <h2 id="punkte_spieler">Punkte:</h2>
+        <h2 id="punkte_cpu">Punkte:</h2>
+    </div>
+
+
+    <div class="wins">
+        <h2 id="wins_spieler">Wins:</h2>
+        <h2 id="wins_cpu">Wins:</h2>
+    </div>
+    <div class="lose">
+        <h2 id="lose_spieler">Lose:</h2>
+        <h2 id="lose_cpu">Lose:</h2>
+    </div>
+
+    <div class="play">
+        <button class="btn" click="start" onclick=start_function() id="start">Spiel starten</button>
+        
+    </div>
+    
+    <script src="1.js"></script>
+</body>
+</html>
